@@ -116,3 +116,17 @@ header .logo {
   cursor: pointer;
   background-color: var(--light-blue);
 }
+
+.info i {
+  box-sizing: border-box;
+  padding: 0.1em;
+  text-align: center;
+  border: 1px solid var(--grey);
+  border-radius: 12px;
+  width: 24px;
+  height: 24px;
+  color: var(--main-blue);
+  transform: scale(0.8);
+}
+
+/*  */
