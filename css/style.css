@@ -11,15 +11,13 @@ body {
 }
 
 main {
-  margin: 0 1.5em;
+  margin: auto;
+  max-width: 1400px;
 }
 
-.px-0 {
-  padding: 0;
-}
-
-.mx-0 {
-  margin: 0;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header */
@@ -154,7 +152,7 @@ header .logo {
 
 .popular {
   width: 420px;
-  padding: 2em;
+  padding: 1em;
 }
 .popular i {
   color: var(--main-blue);
@@ -162,7 +160,7 @@ header .logo {
 
 .results {
   width: 880px;
-  padding: 2em;
+  padding: 1em;
 }
 
 .results-list {
@@ -262,6 +260,9 @@ header .logo {
   padding: 2em;
 }
 
+.activities > .results-list > .results-list-item {
+  margin: 0;
+}
 
 .card-xl {
   max-width: 302px;
@@ -281,4 +282,21 @@ header .logo {
   width: 302px;
   height: 444px;
   object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: start;
+  background-color: var(--grey);
+  margin: 0 2em;
+  border: 1px solid var(--grey);
+}
+
+.footer-item {
+  margin-right: 10em;
+}
+
+.footer-item:first-child {
+  margin-left: 6em;
 }
