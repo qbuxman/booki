@@ -14,6 +14,14 @@ main {
   margin: 0 1.5em;
 }
 
+.px-0 {
+  padding: 0;
+}
+
+.mx-0 {
+  margin: 0;
+}
+
 /* Header */
 header {
   display: flex;
@@ -129,4 +137,86 @@ header .logo {
   transform: scale(0.8);
 }
 
-/*  */
+/* Lodging */
+
+.lodging {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.lodging .popular,
+.results {
+  background: var(--grey);
+}
+
+.popular {
+  width: 420px;
+}
+.popular i {
+  color: var(--main-blue);
+}
+
+.results {
+  width: 880px;
+  padding: 2em;
+}
+
+.results-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.results-list-item {
+  margin: 1em 1em;
+}
+
+.results a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* cards */
+.card {
+  width: 246px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card img {
+  max-height: 123px;
+  object-fit: cover;
+}
+
+.card-header {
+  height: 100px;
+  box-sizing: border-box;
+  object-fit: fill;
+  background-size: auto;
+  border: 5px solid white;
+  border-radius: 0.25em 0.25em 0 0;
+}
+
+.card-body {
+  padding: 0.5em;
+}
+
+.card-body > * {
+  margin: 0.3em 0;
+}
+
+.fa-star {
+  color: var(--main-blue);
+}
+
+.notation .fa-star:nth-child(4) {
+  color: var(--grey) !important;
+}
