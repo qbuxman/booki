@@ -141,17 +141,20 @@ header .logo {
 
 .lodging {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row-reverse;
 }
 
 .lodging .popular,
 .results {
   background: var(--grey);
+  border: 1px solid var(--grey);
+  border-radius: 10px;
 }
 
 .popular {
   width: 420px;
+  padding: 2em;
 }
 .popular i {
   color: var(--main-blue);
@@ -180,6 +183,7 @@ header .logo {
 /* cards */
 .card {
   width: 246px;
+  max-height: 199px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -187,13 +191,41 @@ header .logo {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 2px solid white;
+  border-radius: 0.5em;
 }
 
 .card img {
   max-height: 123px;
   object-fit: cover;
+  border: 1px solid white;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.card-left {
+  flex-direction: row;
+  width: 100%;
+  min-height: 144px;
+}
+
+.card-left > img {
+  min-width: 137px;
+  max-height: 144px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+.card-left > .card-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card-left, .card > .card-body > .description > * {
+  margin: 0;
+  font-size: 14px;
 }
 
 .card-header {
