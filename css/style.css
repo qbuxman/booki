@@ -28,7 +28,9 @@ header {
 }
 
 header .logo {
-  padding: 1em;
+  align-self: center;
+  width: 60px;
+  height: 19px;
 }
 
 .header-menu-list {
