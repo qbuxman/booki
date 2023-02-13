@@ -49,7 +49,8 @@ header .logo {
   max-width: 162px;
 }
 
-.header-menu-list-item:hover, .header-menu-list-item:focus {
+.header-menu-list-item:hover,
+.header-menu-list-item:focus {
   border-top: 3px solid var(--main-blue);
   margin-top: -2px;
   cursor: pointer;
@@ -64,7 +65,7 @@ header .logo {
   margin-bottom: 0.5em;
 }
 .search p {
-  margin-top:0;
+  margin-top: 0;
 }
 
 .form-search {
@@ -350,6 +351,8 @@ header .logo {
   margin: 1em 0 0.5em 0;
 }
 
+/* Responsive */
+/* Desktop */
 @media screen and (min-width: 1154px) {
   .results-list-item {
     margin: 1em 1em;
@@ -360,4 +363,90 @@ header .logo {
   .results-list-item {
     margin: 1em 2em;
   }
+}
+
+/* Tablet */
+@media screen and (max-width: 991px) {
+  .card-left,
+  .card > .card-body > .description > * {
+    font-size: 12px;
+  }
+  .lodging {
+    flex-direction: column-reverse;
+  }
+
+  .results {
+    margin: 0 0 2em 0;
+  }
+
+  .results-list-item {
+    margin: 1.5em;
+  }
+
+  .trends > .result-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .card-left {
+    min-height: 115px;
+    max-height: 100px;
+    max-width: 200px;
+  }
+
+  .card-left > img {
+    min-width: 95px;
+    max-height: 142px;
+  }
+
+  .card-xl {
+    width: 10em;
+  }
+
+  .card-xl > img {
+    height: 10em;
+    width: 100%;
+  }
+
+  .card-xl p {
+    margin: 1em;
+    height: 30px;
+  }
+
+  .activities {
+    padding: 0;
+  }
+
+  .activities > .results-list > .results-list-item {
+    width: 165px;
+  }
+}
+
+@media screen and (max-width: 887px) {
+  .filters-list-items {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 839px) {
+  .filters-list-items {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .filters-list-items {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 767px) {
 }
