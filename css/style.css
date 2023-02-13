@@ -44,16 +44,27 @@ header .logo {
 
 .header-menu-list-item {
   height: 100%;
-  padding: 2em;
+  padding: 1.9em 2em;
+  margin-top: 2px;
   max-width: 162px;
 }
 
-.header-menu-list-item:hover {
-  border-top: 2px solid var(--main-blue);
+.header-menu-list-item:hover, .header-menu-list-item:focus {
+  border-top: 3px solid var(--main-blue);
+  margin-top: -2px;
+  cursor: pointer;
 }
 
 .header-menu-list-item a {
   text-decoration: none;
+}
+
+/* Search */
+.search h1 {
+  margin-bottom: 0.5em;
+}
+.search p {
+  margin-top:0;
 }
 
 .form-search {
