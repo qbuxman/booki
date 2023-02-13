@@ -422,6 +422,10 @@ a {
   .activities > .results-list > .results-list-item {
     width: 165px;
   }
+
+  .footer {
+    margin-top: 2em;
+  }
 }
 
 @media screen and (max-width: 887px) {
@@ -612,5 +616,19 @@ a {
   }
   .card-xl {
     min-width: 340px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 18em;
+  }
+
+  .card-left {
+    min-width: 295px;
+  }
+
+  .card-xl {
+    min-width: 295px;
   }
 }
