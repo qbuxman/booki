@@ -161,7 +161,7 @@ header .logo {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   padding: 0 1em;
   margin: 1em 0 0 1em;
 }
@@ -319,16 +319,22 @@ header .logo {
 /* Footer */
 .footer {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   background-color: var(--grey);
   margin: 0 2em;
   border: 1px solid var(--grey);
 }
 
-.footer-item {
-  margin-right: 10em;
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
 }
 
-.footer-item:first-child {
-  margin-left: 6em;
+.footer-item ul li {
+  margin: 0.5em 0;
+}
+
+.footer-item h3 {
+  margin: 1em 0 0.5em 0;
 }
