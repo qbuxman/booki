@@ -349,3 +349,15 @@ header .logo {
 .footer-item h3 {
   margin: 1em 0 0.5em 0;
 }
+
+@media screen and (min-width: 1154px) {
+  .results-list-item {
+    margin: 1em 1em;
+  }
+}
+
+@media screen and (min-width: 1307px) {
+  .results-list-item {
+    margin: 1em 2em;
+  }
+}
