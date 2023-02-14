@@ -642,6 +642,9 @@ a {
 }
 
 @media screen and (max-width: 320px) {
+  .filters-list > .filters-list-items {
+    font-size: 10px;
+  }
   .card {
     width: 18em;
   }
@@ -651,6 +654,6 @@ a {
   }
 
   .card-xl {
-    min-width: 295px;
+    min-width: 288px;
   }
 }
