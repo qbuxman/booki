@@ -139,7 +139,7 @@ a {
 }
 
 .info {
-  margin: 0 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 .info i {
@@ -609,7 +609,7 @@ a {
   .info {
     font-size: 18px;
   }
-  
+
   .card-left {
     max-width: 342px;
   }
@@ -649,6 +649,11 @@ a {
   .filters-list > .filters-list-items {
     font-size: 11px;
   }
+
+  .info {
+    font-size: 16px;
+  }
+
   .card-xl {
     min-width: 340px;
   }
@@ -658,6 +663,11 @@ a {
   .filters-list > .filters-list-items {
     font-size: 10px;
   }
+
+  .info {
+    font-size: 14px;
+  }
+
   .card {
     width: 18em;
   }
