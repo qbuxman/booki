@@ -76,11 +76,12 @@ a {
   padding: 0.8em 1em;
   border: 1px solid var(--grey);
   background-color: var(--grey);
-  border-radius: 10% 0 0 10%;
+  border-radius: 10px 0 0 10px;
 }
 
 .form-search-text {
-  padding: 1.2em;
+  padding: 0.7em;
+  font-size: 18px;
   border: 1px solid var(--grey);
   color: black;
   font-weight: bold;
@@ -90,7 +91,7 @@ a {
 .form-search-button {
   padding: 1.2em;
   border: 1px solid var(--main-blue);
-  border-radius: 0 10% 10% 0;
+  border-radius: 0 10px 10px 0;
   background-color: var(--main-blue);
   color: white;
   font-weight: bold;
@@ -99,6 +100,10 @@ a {
 
 .form-search-button:hover {
   cursor: pointer;
+}
+
+.form-search-button > i {
+  display: none;
 }
 
 /* Filters */
@@ -479,6 +484,23 @@ a {
   }
   .search {
     margin: 1em;
+  }
+
+  .form-search-button {
+    padding: 1.3em;
+  }
+
+  .form-search-text {
+    width: 55vw;
+  }
+
+  .form-search-button-text {
+    display: none;
+  }
+
+  .form-search-button > i {
+    display: block;
+    pas
   }
 
   /* Form */
