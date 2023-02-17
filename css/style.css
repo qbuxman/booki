@@ -85,7 +85,7 @@ a {
   border: 1px solid var(--grey);
   color: black;
   font-weight: bold;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .form-search-button {
@@ -95,7 +95,7 @@ a {
   background-color: var(--main-blue);
   color: white;
   font-weight: bold;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .form-search-button:hover {
