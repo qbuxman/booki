@@ -128,6 +128,12 @@ a {
   font-weight: bold;
 }
 
+@-moz-document url-prefix() { 
+  .filters-list-items {
+    padding: 0.9em;
+  }
+}
+
 .filters-list-items i {
   color: var(--main-blue);
   margin-right: 0.5em;
@@ -382,6 +388,7 @@ a {
 
   .results {
     margin: 0 0 2em 0;
+    padding-bottom: 1em;
   }
 
   .results-list-item {
@@ -472,7 +479,6 @@ a {
 
   .header-menu-list-item {
     width: 100%;
-    max-width: none;
     text-align: center;
   }
 
