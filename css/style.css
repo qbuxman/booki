@@ -73,7 +73,7 @@ a {
 }
 
 .form-search-icon {
-  padding: 0.8em 1em;
+  padding: 0.9em 1em;
   border: 1px solid var(--grey);
   background-color: var(--grey);
   border-radius: 10px 0 0 10px;
@@ -128,7 +128,7 @@ a {
   font-weight: bold;
 }
 
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
   .filters-list-items {
     padding: 0.9em;
   }
@@ -621,8 +621,6 @@ a {
     min-width: 24em;
     margin-left: auto;
     margin-right: auto;
-    
-    
   }
 
   /* Footer */
