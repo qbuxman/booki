@@ -506,6 +506,13 @@ a {
   .search {
     margin: 1em;
   }
+
+  .info {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: baseline;
+  }
   /* Form */
   .form-search-button {
     padding: 1.3em;
