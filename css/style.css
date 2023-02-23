@@ -375,7 +375,8 @@ a {
   background-color: var(--grey);
   border: 1px solid var(--grey);
   font-size: 12px;
-  padding: 1em 2em;
+  padding: 0 2em;
+  margin: 0 1em;
 }
 
 .footer-item {
