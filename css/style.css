@@ -54,6 +54,7 @@ a {
   border-top: 3px solid var(--main-blue);
   margin-top: -2px;
   cursor: pointer;
+  color: var(--main-blue);
 }
 
 .header-menu-list-item a {
@@ -581,6 +582,7 @@ a {
   /* Footer */
   .footer {
     margin: 1em 0 0 0;
+    flex-direction: column;
   }
 }
 
