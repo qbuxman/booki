@@ -372,10 +372,18 @@ a {
 /* Footer */
 .footer {
   display: flex;
-  justify-content: space-around;
   background-color: var(--grey);
-  margin: 0 1em;
   border: 1px solid var(--grey);
+  font-size: 12px;
+  padding: 1em 2em;
+}
+
+.footer-item {
+  width: calc(95% / 3);
+}
+
+.footer-item:first-child {
+  margin-left: 3em;
 }
 
 .footer-item ul {
