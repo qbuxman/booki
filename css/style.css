@@ -346,19 +346,20 @@ a {
 
 .activities > .results-list > .results-list-item {
   margin: 0;
+  width: calc(90% / 4);
 }
 
-.card-xl {
-  max-width: 13em;
+.card-xl {  
   border: 1px solid white;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0.5em;
 }
 
 .card-xl > h5 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
-  margin-left: 1em;
+  margin: 0;
+  padding: 1em 0.5em;
 }
 
 .card-xl > img {
