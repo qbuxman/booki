@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  margin: 1em;
+  margin: 2em;
   max-width: 1400px;
 }
 
@@ -32,7 +32,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 0 1em;
+  padding: 0 0 0 2em;
 }
 
 .header .logo {
@@ -377,11 +377,11 @@ a {
   border: 1px solid var(--grey);
   font-size: 12px;
   padding: 0 2em;
-  margin: 0 1em;
+  margin: 0 2.4em;
 }
 
 .footer-item {
-  width: calc(95% / 3);
+  width: calc(90% / 3);
 }
 
 .footer-item:first-child {
@@ -405,9 +405,6 @@ a {
 /* Responsive */
 /* Tablet */
 @media screen and (max-width: 991px) {
-  .header {
-    padding: 0 0 0 1em;
-  }
   .filters-title {
     padding-right: 1em;
   }
