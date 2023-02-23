@@ -188,7 +188,7 @@ a {
 }
 
 .lodging .popular {
-  padding: 1em;
+  padding: 1em 1em 2em;
 }
 
 .popular-title {
@@ -404,10 +404,6 @@ a {
 /* Responsive */
 /* Tablet */
 @media screen and (max-width: 991px) {
-  .card-left,
-  .card > .card-body > .description > * {
-    font-size: 12px;
-  }
   .lodging {
     flex-direction: column-reverse;
   }
@@ -421,22 +417,33 @@ a {
     margin: 1.5em;
   }
 
-  .trends > .result-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
+  .popular-title {
+    padding: 0 0.6em;
+    margin: 1.5em 0;
   }
 
-  .card-left {
-    min-height: 115px;
-    max-height: 100px;
-    max-width: 200px;
+  .popular-title > h2 {
+    margin: 0;
   }
+
+  .popular >.trends > .result-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .popular >.trends > .result-list > .results-list-item {
+    width: calc(100% / 3);
+    margin: 0 0.5em;
+  }
+
+  /* .card-left {
+    width: calc(90% / 3);
+  } */
 
   .card-left > img {
-    min-width: 95px;
-    max-height: 142px;
+    /* min-width: 50%; */
+    /* max-height: 142px; */
+    /* width: calc(100% / 2); */
   }
 
   .card-xl {
