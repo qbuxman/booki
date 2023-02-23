@@ -5,6 +5,10 @@
   --grey: #d9d9d9;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -18,6 +22,10 @@ main {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* Header */
@@ -125,11 +133,11 @@ a {
 }
 
 .filters-list-items {
-  margin: 0 0.65em;
+  margin: 0 1em;
   padding: 0.5em;
   border: 2px solid var(--grey);
   border-radius: 25px;
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: bold;
 }
 
@@ -166,7 +174,6 @@ a {
 }
 
 /* Lodging */
-
 .lodging {
   display: flex;
   justify-content: space-around;
@@ -207,22 +214,32 @@ a {
 }
 
 .results-title {
-  margin: 1em 0 0 1em;
+  margin: 1em 0 0 2em;
   font-size: 14px;
 }
 
-.results-title h2 {
-  margin: 0;
+.results-title > h2 {
+  margin: 1em 0 0;
+  
 }
 
 .results-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
 }
 
-.results-list-item {
-  margin: 1em 0;
+.results-list-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.results-list-block > .results-list-item {
+  margin: 0.5em ;
+  width: calc(100% / 3);
 }
 
 .results a {
@@ -232,30 +249,39 @@ a {
 }
 
 .display-more {
-  margin: 1em;
+  margin: 3em 1.5em;
 }
 
 /* cards */
 .card {
-  width: 12em;
-  max-height: 200px;
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 2px solid white;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   border-radius: 0.5em;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-  min-height: 112px;
+  height: 100px;
+  width: 100%;
+  max-height: 90px;
   object-fit: cover;
   border: 1px solid white;
   border-radius: 0.5em 0.5em 0 0;
+}
+
+.card-body {
+  padding: 0.5em;
+}
+
+.card-body > .notation {
+  font-size: 12px;
 }
 
 .card-left {
@@ -282,8 +308,8 @@ a {
 
 .card-left,
 .card > .card-body > .description > * {
-  margin: 0;
-  font-size: 14px;
+  margin: 0.2em 0;
+  font-size: 12px;
 }
 
 .description p {
@@ -297,14 +323,6 @@ a {
   background-size: auto;
   border: 5px solid white;
   border-radius: 0.25em 0.25em 0 0;
-}
-
-.card-body {
-  padding: 0.5em;
-}
-
-.card-body > * {
-  margin: 0.3em 0;
 }
 
 .fa-star {
