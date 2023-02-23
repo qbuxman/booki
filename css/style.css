@@ -32,7 +32,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 1em;
+  padding: 0 0 0 1em;
 }
 
 .header .logo {
@@ -124,7 +124,7 @@ a {
 }
 
 .filters {
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .filters-title {
@@ -133,19 +133,19 @@ a {
 }
 
 .filters-list-items {
-  margin: 0 1em;
-  padding: 0.5em;
+  margin: 0 0 0 0.8em;
+  padding: 1em;
   border: 2px solid var(--grey);
   border-radius: 25px;
   font-size: 14.5px;
   font-weight: bold;
 }
 
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   .filters-list-items {
     padding: 0.9em;
   }
-}
+} */
 
 .filters-list-items i {
   color: var(--main-blue);
@@ -158,7 +158,7 @@ a {
 }
 
 .info {
-  margin: 1em 0 1em 0;
+  margin: 2em 0;
 }
 
 .info i {
@@ -188,15 +188,18 @@ a {
 }
 
 .lodging .popular {
-  padding: 1em 1em 2em;
+  padding: 1em;
 }
 
 .popular-title {
-  font-size: 14px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.popular-title > h2 {
+  font-size: 18px;
 }
 
 .popular > .trends > .result-list {
@@ -206,7 +209,7 @@ a {
 }
 
 .popular > .trends > .result-list > .results-list-item {
-  margin: 0.5em 0;
+  margin: 0.5em 0 1.5em 0;
 }
 
 .popular i {
@@ -269,7 +272,6 @@ a {
 .card > img {
   height: 100px;
   width: 100%;
-  max-height: 90px;
   object-fit: cover;
   border: 1px solid white;
   border-radius: 0.5em 0.5em 0 0;
@@ -403,12 +405,16 @@ a {
 /* Responsive */
 /* Tablet */
 @media screen and (max-width: 991px) {
+  .header {
+    padding: 0 0 0 1em;
+  }
   .filters-title {
     padding-right: 1em;
   }
 
   .filters-list-items {
-    margin-right: 1em;
+    margin: 0 0 0 1em;
+    padding: 1em;
   }
 
   .lodging {
@@ -418,6 +424,10 @@ a {
   .results {
     margin: 0 0 2em 0;
     padding-bottom: 1em;
+  }
+
+  .results-title > h2 {
+    font-size: 18px;
   }
 
   .results-list-item {
@@ -431,6 +441,7 @@ a {
 
   .popular-title > h2 {
     margin: 0;
+    font-size: 18px;
   }
 
   .popular > .trends > .result-list {
@@ -443,9 +454,13 @@ a {
     margin: 0 0.5em;
   }
 
+  .activities > h2 {
+    font-size: 18px;
+  }
+
   .activities > .results-list > .results-list-item {
     width: calc(85% / 4);
-    height: 260px;
+    height: 200px;
   }
   .activities > .results-list > .results-list-item > .card-xl {
     min-height: 100%;
@@ -456,7 +471,7 @@ a {
   }
 
   .card-xl > img {
-    height: 211px;
+    height: 150px;
   }
 
   .card-xl > .activity-name {
