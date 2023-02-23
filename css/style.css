@@ -404,6 +404,14 @@ a {
 /* Responsive */
 /* Tablet */
 @media screen and (max-width: 991px) {
+  .filters-title {
+    padding-right: 1em;
+  }
+
+  .filters-list-items {
+    margin-right: 1em;
+  }
+
   .lodging {
     flex-direction: column-reverse;
   }
@@ -434,16 +442,6 @@ a {
   .popular >.trends > .result-list > .results-list-item {
     width: calc(100% / 3);
     margin: 0 0.5em;
-  }
-
-  /* .card-left {
-    width: calc(90% / 3);
-  } */
-
-  .card-left > img {
-    /* min-width: 50%; */
-    /* max-height: 142px; */
-    /* width: calc(100% / 2); */
   }
 
   .card-xl {
