@@ -133,7 +133,7 @@ a {
 }
 
 .filters-list-items {
-  margin: 0 0 0 0.8em;
+  margin: 0 0 0 0.5em;
   padding: 1em;
   border: 2px solid var(--grey);
   border-radius: 25px;
@@ -406,11 +406,15 @@ a {
 /* Tablet */
 @media screen and (max-width: 991px) {
   .filters-title {
-    padding-right: 1em;
+    padding-right: 0.5em;
+  }
+
+  .filters-list {
+    justify-content: center;
   }
 
   .filters-list-items {
-    margin: 0 0 0 1em;
+    margin: 0 0 0 0.5em;
     padding: 1em;
   }
 
