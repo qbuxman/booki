@@ -11,12 +11,12 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: 0;
+  max-width: 1400px;
+  margin: auto;
 }
 
 main {
   margin: 2em;
-  max-width: 1400px;
 }
 
 a {
@@ -675,7 +675,7 @@ a {
   }
 
   .activities > h2 {
-    padding-right: 6.3em;
+    width: 33%;
     margin-bottom: 0;
   }
 
