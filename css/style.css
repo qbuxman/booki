@@ -141,12 +141,6 @@ a {
   font-weight: bold;
 }
 
-/* @-moz-document url-prefix() {
-  .filters-list-items {
-    padding: 0.9em;
-  }
-} */
-
 .filters-list-items i {
   color: var(--main-blue);
   margin-right: 0.5em;
